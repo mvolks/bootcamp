@@ -1,0 +1,22 @@
+while True:
+    nome = len(input("insira seu nome ae: "))
+    if nome < 3:
+        print("por favor, fale um nome valido")
+    else:
+        idade = int(input('insira sua idade:'))
+        if idade < 0 or idade > 150:
+            print ("por favor, insira uma idade valida.")
+        else:
+            salario = int(input('insira seu salario:'))
+            if salario < 0:
+                print ("por favor, insira um valor valido.") 
+            else:
+                sexo = input("nsira seu sexo: ") .upper() .strip() [0]
+                if sexo not in "MF":
+                    print ('por favor. insira um sexo valido')
+                else:
+                    cvl = input("insira seu estado civil: ") .upper().strip()[0]
+                    if cvl not in "SCVD":
+                        print ("por favor, insira uma resposta valida")
+                    else:
+                        break

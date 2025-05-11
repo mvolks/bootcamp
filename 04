@@ -1,0 +1,13 @@
+orc = int(input ("por favor insira o valor do orcamento: "))
+cont= 0
+total = 0
+while True:
+    cont += 1
+    servico = float (input(f"Fale o valor do {cont}° serviço: "))
+    total += servico
+    orcamento_parcial = orc - total
+    if orcamento_parcial <= 0:
+        print (f'orçamente estourado em {orcamento_parcial * -1}')
+        break
+    else:
+        print(f'Ainda restam {orcamento_parcial:.2f}')

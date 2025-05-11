@@ -1,0 +1,8 @@
+nota = 0
+while True:
+    valor = int(input( "por favor, insira uma nota entre 0 e 10: "))
+    if valor > 10 or valor < 0:
+        print("erro, insira um valor valido!")
+    else:
+        break 
+print("sucesso!")

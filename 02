@@ -1,0 +1,12 @@
+cont_positivo = 0
+cont_negativo = 0
+print ('Escreva quantos números quiser e direi quantos números negativos e positivos voce digitou')
+while True:
+    numero = int (input("Fale qualquer número: "))
+    if numero > 0:
+        cont_positivo += 1
+    elif numero < 0:
+        cont_negativo += 1
+    else:
+        break
+print (f'De um total de {cont_negativo + cont_positivo} números você escreveu {cont_positivo} numeros positivos e {cont_negativo} numeros negativos')
